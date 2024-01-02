@@ -1,0 +1,963 @@
+/* Main Style Start*/
+
+@font-face {
+	font-family: square721;
+	src: url(../fonts/square721.ttf);
+}
+
+@font-face {
+	font-family: fontawesome;
+	src: url(../fonts/fontawesome.ttf);
+}
+
+
+*{
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+body{
+	margin: 0px;
+	padding:0px;
+	font-family: square721;
+	min-height: 622px;
+	position: relative;
+}
+body a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.siteTitle{
+	display: block;
+	font-size: 25px;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 2px solid #000000;
+}
+
+.siteTitle a{
+	border-radius: 4px;
+	padding:5px 10px;
+	vertical-align: middle;
+	box-shadow: 0px 0px 2px #000000;
+	text-shadow: 0px 0px 20px #000000;
+}
+.main{
+	display: block;
+	min-height: 400px;
+}
+.landing_page{
+	display: block;
+	min-height: 615px;
+	margin-top: 50px;
+	background-image: url("../images/site/backgrounds/duet.png");
+	background-repeat: no-repeat;
+	padding: 100px 10px 60px 10px;
+	background-size: cover;
+}
+.clearFix{
+	clear: both;
+}
+
+#shortIntro{
+	margin: 0px 50px;
+}
+
+
+/* Main Style End */
+
+/* Header Section Start */
+.header{
+	background-color: #06574f;
+	padding: 0px;
+	color: #FFFFFF;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 1111111111;
+}
+.mainmenu{
+	
+}
+.mainmenu ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.mainmenu>ul>li{
+	display: inline-block;
+	position: relative;
+}
+.mainmenu>ul>li>a{
+	padding: 0px 20px;
+	display: block;
+	line-height: 45px;
+	cursor: pointer;
+}
+.mainmenu>ul>li:hover>a{
+	background-color: #053e39;
+	text-shadow: 3px 3px 3px #000000;
+	padding: 0px 25px;
+}
+/* .mainmenu>ul>li:hover>.submenu{display: block;} */
+#menu{
+	display: inline-block;
+	z-index: 4;
+}
+.mainmenu>ul>li>ul{
+	transition: none;
+	position: absolute;
+	top: 55px;
+	left: 0px; 
+	background-color: #06574f;
+}
+
+.submenu{
+	display: none;
+	z-index: 5;
+	width: 200px;
+	border: 2px solid #000;
+}
+.submenu>li{
+	display: block;
+}
+.submenu>li>a{
+	padding: 0px 20px;
+	line-height: 40px;
+	display: block;
+	cursor: pointer;
+}
+
+.submenu>li>a:hover{
+	background-color: #053e39;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+.subMenuTopBox{
+	position: absolute;
+	padding: 0px 0px;
+	top: -10px;
+	left: 20px;
+	background-color: #06574f;
+	border: 2px solid #000;
+	display: block;
+	margin: 0px auto;
+	color: #06574f;
+	z-index: -100;
+	transform: rotate(45deg);
+	border-bottom: 0px;
+	border-right: 0px;
+	height: 20px;
+	width: 20px;
+}
+.menubutton{
+		position: fixed;
+		display: none;
+	}
+.menubutton i{
+		display: none;
+	}
+/* Header Section End */
+
+
+
+/*  Form Section Start */
+
+.logInForm{
+	display: block;
+	width: 350px;
+	background-color: #06574F;
+	margin:0px auto;
+	border-radius: 8px;
+	border: 2px solid #033a35;
+	padding:10px 40px 40px 40px;
+	box-shadow: 0px 10px 200px #000000;
+}
+.logInForm>h3{
+	line-height: 40px;
+	padding: 0px;
+	margin: 0px;
+	color: #FFFFFF;
+	font-size: 22px;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 2px 2px 20px #000000;
+}
+.logInForm form{
+	text-align: center;
+}
+
+.logInForm form input{
+	display: inline-block;
+	width: 90%;
+	text-align: center;
+	font-size: 100%;
+	margin: 10px 0px 5px 0px;
+	padding: 10px 5px;
+	border-radius: 5px;
+	border: 0px solid #000000;
+	border-bottom: 3px solid #000000;
+	background-color: #033a35;
+	color: #FFFFFF;
+}
+.logInForm form input:focus{
+	background-color: #031816;
+}
+.logInForm form input::placeholder{
+	color: #898989;
+}
+
+.logInForm form button {
+	padding: 7px 10px;
+	border-radius: 6px;
+	background-color: #103a36;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	font-size: 100%;
+	cursor: pointer;
+	padding: 7px 20px;
+}
+
+.logInForm form button:hover{
+	background-color: #031816;
+}
+
+.logInFormError{
+	text-align: center;
+	width: 350px;
+	padding: 10px 8px;
+	color: #FFFFFF;
+	background-color: #b91414;
+	display: block;
+	margin:0px auto;
+	border-radius: 5px;
+	box-shadow: 0px 3px 40px #000000B0;
+}
+.logInFormError>a{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+/* Student Area Form Section End */
+
+
+/* Grid Section Start */
+
+.col-2{
+	width: 50%;
+	padding: 5px;
+	display: inline-block;
+	float: left;
+	margin: auto;
+}
+.col-3{
+	width: 33%;
+	padding: 5px;
+	display: inline-block;
+	float: left;
+}
+
+/* Grid Section End */
+
+
+
+/* Card */
+
+.squareCard{
+	display: inline-block;
+	float: left;
+	border-radius: 10px;
+	height: 175px;
+	box-shadow: 0px 0px 10px #000000;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.squareCard:hover{
+	box-shadow: 0px 0px 20px #000000;
+	background-color: #06574f30;
+}
+
+.squareCard h3{
+	padding: 5px;
+	margin: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid #022c28;
+	color: #022c28;
+}
+
+.squareCard h2{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+
+/* Card */
+
+
+/* Buttons */
+.button1{
+	display: block;
+	line-height: 35px;
+	padding: 0px 30px;
+	background-color: #06574F;
+	border: 2px solid #093935;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin: 0px auto;
+	box-shadow: 0px 0px 10px #000000;
+}
+.button1:hover{
+	background-color: #FFFFFF;
+	color: #06574F;
+	font-weight: bold;
+}
+.button1:hover a{
+	background-color: #FFFFFF;
+	color: #06574F;
+	font-weight: bold;
+}
+
+
+.button2{
+	display: inline-block;
+	line-height: 30px;
+	padding: 0px 10px;
+	background-color: #06574F;
+	border: 2px solid #093935;
+	border-radius: 8px;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin: 0px auto;
+}
+.button2:hover{
+	background-color: #FFFFFF;
+	color: #06574F;
+	box-shadow: 0px 0px 8px #000000;
+}
+.button2:hover a{
+	background-color: #FFFFFF;
+	color: #06574F;
+}
+
+
+.darkBlueButton{
+	background-color: #123834;
+}
+
+.darkBlueButton:hover{
+	color: #123834;
+}
+
+
+.greenButton{
+	background-color: #125012;
+}
+
+.greenBbutton:hover{
+	color: #125012;
+}
+
+.redButton{
+	background-color: #741717;
+}
+.redButton:hover{
+	color: #741717;
+}
+
+/* Buttons End */
+
+
+
+/* Box Section */
+.box{
+	border: 2px solid #06574f;
+	display: block;
+}
+.box>.boxTitle{
+	border-bottom: 2px solid #053e39;
+	line-height: 30px;
+	padding: 0px 10px;
+	background-color: #06574f;
+	color: #FFFFFF;
+
+}
+.box>.boxTitle>h3{
+	margin: 0px;
+	padding: 0px;
+}
+.box>.boxTitle2{
+	border-bottom: 2px solid #053e39;
+	line-height: 35px;
+	padding: 0px 10px;
+	background-color: #06574f;
+	color: #FFFFFF;
+
+}
+.box>.boxTitle2>h3{
+	margin: 0px;
+	padding: 0px;
+}
+.box>.boxContent{
+	padding: 5px 10px;
+	min-height: 80px;
+}
+
+.box:hover{
+	box-shadow: 0px 3px 20px #00000099;
+}
+
+.hidableBox{
+	border: 2px solid #06574f;
+	display: block;
+}
+.hidableBox>.hidableBoxTitle{
+	line-height: 35px;
+	padding: 0px 10px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	position: relative;
+	cursor: pointer;
+
+}
+.hidableBox>.hidableBoxTitle>h3{
+	margin: 0px;
+	padding: 0px;
+}
+.hidableBox>.hidableBoxTitle>button{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 0;
+	background-color: #ffffff00;
+	z-index: 10000;
+	cursor: pointer;
+	color: #ffffff;
+	border: 0px solid #ffffff00;
+}
+.rotate_180{
+	transform: rotate(180deg);
+}
+.hidableBox>.hidableBoxContent{
+	padding: 5px 10px;
+	display: none;
+	transition: all 0s;
+}
+
+.hidableBox:hover{
+	box-shadow: 0px 3px 20px #00000099;
+}
+
+
+/* Box Section end */
+
+
+/* Admin Interface starts */
+
+.adminInterface{
+	border: 2px solid #06574f;
+	border-bottom: 0px solid #FFFFFF;
+	display: block;
+}
+
+.leftNavigation{
+	display: inline-block;
+	width: 20%;
+	background-color: #06574f;
+	border-right: 3px solid #053e39;
+	border-bottom: 3px solid #053e39;
+	min-height: 500px;
+	float: left;
+}
+.leftNavigation>ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.leftNavigation>ul a{
+	vertical-align: middle;	
+}
+
+
+.leftNavigation>ul li{
+	line-height: 35px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px 10px 5px 10px;
+	vertical-align: middle;
+	border-bottom: 1px solid #022c28;
+	border-left: 5px solid #022c28;
+}
+
+.leftNavigation>ul li:hover{
+	background-color: #053e39;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+#adminInterfaceContent{
+	display: inline-block;
+	width: 79.5%;
+	float: left;
+	margin-left: 3px;
+	height: 620px!important;
+	overflow: scroll;
+}
+#adminInterfaceContent>.tabTitle{
+	border-bottom: 2px solid #053e39;
+	height: 50px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	margin-top: 2px;
+	display: block;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+#adminInterfaceContent>.tabContent{
+	padding: 0px 2px 0px 2px;
+	margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.singlebox{
+	width: 80%;
+	display: block;
+	border: 2px solid #000000;
+	margin: auto;
+}
+
+.compactbox{
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+.tabBox{
+	width: 100%;
+	display: block;
+	border: 2px solid #000000;
+	margin: auto;
+}
+.tabBox2{
+	width: 100%;
+	display: block;
+	border: 2px solid #000000;
+	padding: 5px;
+	margin: auto;
+}
+.createReportForm input{
+	width: 100%;
+	line-height: 30px;
+	font-size: 105%;
+	padding: 2px 20px;
+	margin: 3px 0;
+	display: inline-block;
+	border: 1px solid #000000;
+	border-radius: 4px;
+}
+
+.createReportForm select{
+	width: 100%;
+	line-height: 30px;
+	font-size: 105%;
+	padding: 5px 20px;
+	margin: 3px 0;
+	display: inline-block;
+	border: 1px solid #000000;
+	border-radius: 4px;
+}
+
+
+.createReportForm textarea{
+	width: 100%;
+	line-height: 30px;
+	font-size: 110%;
+	padding: 5px 20px;
+	margin: auto;
+	display: block;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	font-family: square721;
+}
+
+
+.formEvenRow{
+	display: block;
+	padding: 2px;
+	background-color: #d1d1d1;
+	min-height: 35px;
+}
+.formOddRow{
+	display: block;
+	padding: 2px;
+	background-color: #dbdbdb;
+	min-height: 35px;
+}
+.formElementTitle{
+	width: 35%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+.formElement{
+	width: 55%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+.formElementError{
+	width: 98%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	color: #931111;
+	padding:5px 10px 5px 10px;
+}
+
+.closable_popup{
+	width: 30%;
+	border: 2px solid #125012;
+	background-color: #c5dfc5;
+	box-shadow: 0px 0px 10px #125012;
+	border-radius: 5px;
+	padding: 5px;
+	margin: auto;
+	position: relative;
+	margin-bottom: 10px;
+	font-family: Arial;
+}
+
+.error_popup{
+	border: 2px solid red;
+	background-color: red;
+	box-shadow: 0px 0px 10px red;
+}
+
+.closable_popup .close_button{
+	position: absolute;
+	right: 0;
+	top: 5;
+	padding: 0px 5px;
+	cursor: pointer;
+	font-size:22px;
+	transform: rotate(45deg);
+}
+.closable_popup .close_button:hover{
+	color: #125012;
+}
+
+.successMessage{
+	width: 50%;
+	margin: auto;
+	padding: 40px 10px;
+	text-align: center;
+	border: 2px solid #033e03;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #094209;
+	color: #033e03;
+	font-weight: bold;
+}
+
+.unsuccessMessage{
+	width: 50%;
+	margin: auto;
+	padding: 40px 10px;
+	text-align: center;
+	border: 2px solid #500808;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px #500808;
+	color: #500808;
+	font-weight: bold;
+}
+.filterSection{
+	height: 40px;
+	display: inline-block;
+	float: left;
+}
+
+.typeFilterSection{
+	height: 40px;
+	display: inline-block;
+	float: left;
+	margin-left: 5px;
+}
+
+.filterList{
+	display: none;
+	list-style: none;
+	z-index: 10000000;
+	position: absolute;
+	padding: 0px;
+	margin: 0px 0px 0px 3px;
+	background-color: #06574f;
+	border-collapse: collapse;
+	box-shadow: 0px 0px 20px #000000;
+	transition: 0s;
+}
+
+.filterList li{
+	width: 100%;
+	display: block;
+	text-align: left;
+}
+
+
+.filterList li button{
+	width: 100%;
+	display: block;	
+	padding: 8px;
+	cursor: pointer;
+	background-color: #ffffff00;
+	color: #FFFFFF;
+	border: 1px solid #000;
+	text-align: left;
+}
+
+
+.filterList li button:hover{
+	background-color: #011614!important;
+}
+
+.searchSection{
+	height: 40px;
+	display: inline-block;
+	float: right;
+}
+
+
+.searchSection input[type=text]{
+	height: 30px;
+	font-size: 100%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.tableOne{
+	width: 100%;
+	margin: 0px;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.tableOneHeader{
+	background-color: #06574f;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+.tableOneHeader2{
+	background-color: #619b95;
+	color: #000000;
+	line-height: 30px;
+}
+
+.tableOne .evenRow{
+	background-color: #c3c3c3;
+}
+
+.tableOne .oddRow{
+	background-color: #e7e7e7;
+}
+
+.tableOne .evenRow:hover, .tableOne .oddRow:hover{
+	background-color: #6b938f;	
+}
+
+.tableOne th, .tableOne td{
+	border-left: 1px solid #76757559;
+	border-right: 1px solid #76757559;
+	padding: 5px 5px;
+	text-align: center;
+	vertical-align: center;
+	line-height: 35px;
+}
+
+.reportView{
+	width: 100%;
+	margin: 0px;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+.reportView .evenRow{
+	background-color: #c3c3c3;
+	line-height: 30px;
+}
+.reportView .oddRow{
+	background-color: #e7e7e7;
+	line-height: 30px;
+}
+.reportView th, .reportView td{
+	border: 1px solid #9f9f9f;
+	padding: 5px 5px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#application_validation_text_input{
+	height: 35px;
+	font-size: 100%;
+	display: inline-block;
+	width: 40%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px 10px;
+}
+.red_text{
+	color: #870c0c;
+}
+
+.green_text{
+	color: #066206;
+}
+
+/* Admin Interface ends */
+
+
+/* Student Interface */
+.student_report_list a{
+	color: #06574f;
+	font-weight: bold;
+}
+
+.application_details{
+	padding: 0px!important;
+}
+
+/* Student Interface Ends*/
+
+
+
+/* Footer Section Start */
+.footer{
+	border: 2px solid #063631;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: 0px 2px 0px 2px;
+}
+.footerHolder{
+	color: #06574F;
+}
+.footerHolder a{
+	color: #06574F;
+}
+.footerHolder a:hover{
+	font-weight: bold;
+}
+.footerHolder>.col-2{
+	text-align: center;
+}
+.footerHolder>.col-2>ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+.copyright{
+	display: block;
+	line-height: 40px;
+	background-color: #06574f;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/* Footer Section End */
+
+
+/* Others */
+#adminWindow{
+	margin: 0px 2px;
+}
+.unbulleted_left_aligned_list{
+	list-style: none;
+	text-align: left;
+}
+
+
+
+/* Responsive Design Start */
+
+@media only screen and (max-width: 768px){
+	*{
+		font-size: 99%;
+	}
+	.mainmenu{
+		box-shadow: 0px 3px 20px #000000;
+	}
+	.mainmenu>ul>li{
+		display: block;
+		width: 100%;
+	}
+	#menu{
+		display: none;
+		width: 100%;
+		transition: none;
+	}
+	.submenu{
+		position: initial!important;
+		padding-left: 40px!important;
+		border: 0px solid #fff!important;
+		width: 100%;
+	}
+	.subMenuTopBox{
+		display: none;
+	}
+	.submenu>li{
+		width: 100%;
+		display: block!important;
+	}
+	.menubutton{
+		position: fixed;
+		display: inline-block;
+		cursor: pointer;
+		float: right;
+		right: 10px;
+		top: 12px;
+		height: 30px;
+		width: 30px;
+		padding-right: 5px;
+	}
+	.menubutton i{
+		font-size: 25px;
+		height: 100%;
+		width: 100%;
+		display: block;
+	}
+	.menubutton i:hover{
+		background-color: #FFFFFF00;
+	}
+	.siteTitle{
+		display: block;
+		font-size: 18px;
+		padding: 10px 25px 10px 0px;
+		text-align: center;
+	}
+	.main, .col-2, .col-3{
+		width: 100%!important;
+		padding-left: 5px!important;
+		padding-right: 5px!important;
+	}
+	.main{
+		padding:0px 5px;
+	}
+	.singlebox{
+		width: 100%;
+		border: 0px solid #000;
+	}
+	.compactbox{
+		width: 100%;
+	}
+}
+
+/* Responsive Design End */
